@@ -8,22 +8,22 @@ namespace DevelopmentChallenge.Data.Classes
     {
         private readonly decimal _radio;
 
-        public Circulo(decimal radio) : base(FormaGeometricaTipo.Circulo, radio)
+        public Circulo(decimal radio) : base(FormaGeometricaTipo.Circulo)
         {
             _radio = radio;
         }
 
-        public decimal CalcularArea() => (decimal)Math.PI * (_radio / 2) * (_radio / 2);
+        public decimal CalcularArea() => (decimal)Math.PI * (_radio * _radio);
 
-        public decimal CalcularPerimetro() => (decimal)Math.PI * _radio;
+        public decimal CalcularPerimetro() => (decimal)Math.PI * (_radio*2);
 
-        public string TraducirForma(int cantidad, int idioma)
+        public string TraducirForma(int cantidad, Idioma idioma)
         {
             switch (idioma)
             {
-                case FormaGeometrica.Castellano: return cantidad == 1 ? "Círculo" : "Círculos";
-                case FormaGeometrica.Ingles: return cantidad == 1 ? "Circle" : "Circles";
-                case FormaGeometrica.Italiano: return cantidad == 1 ? "Cerchio" : "Cerchi";
+                case Idioma.Castellano: return cantidad == 1 ? "Círculo" : "Círculos";
+                case Idioma.Ingles: return cantidad == 1 ? "Circle" : "Circles";
+                case Idioma.Italiano: return cantidad == 1 ? "Cerchio" : "Cerchi";
                 default: return string.Empty;
             }
         }

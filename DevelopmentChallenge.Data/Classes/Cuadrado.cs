@@ -7,7 +7,7 @@ namespace DevelopmentChallenge.Data.Classes
     {
         private readonly decimal _lado;
 
-        public Cuadrado(decimal lado):base(FormaGeometricaTipo.Cuadrado, lado)
+        public Cuadrado(decimal lado):base(FormaGeometricaTipo.Cuadrado)
         {
             _lado = lado;
         }
@@ -16,13 +16,13 @@ namespace DevelopmentChallenge.Data.Classes
 
         public decimal CalcularPerimetro() => _lado * 4;
 
-        public string TraducirForma(int cantidad, int idioma)
+        public string TraducirForma(int cantidad, Idioma idioma)
         {
             switch (idioma)
             {
-                case FormaGeometrica.Castellano: return cantidad == 1 ? "Cuadrado" : "Cuadrados";
-                case FormaGeometrica.Ingles: return cantidad == 1 ? "Square" : "Squares";
-                case FormaGeometrica.Italiano: return cantidad == 1 ? "Quadrato" : "Quadrati";
+                case Idioma.Castellano: return cantidad == 1 ? "Cuadrado" : "Cuadrados";
+                case Idioma.Ingles: return cantidad == 1 ? "Square" : "Squares";
+                case Idioma.Italiano: return cantidad == 1 ? "Quadrato" : "Quadrati";
                 default: return string.Empty;
             }
         }

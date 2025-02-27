@@ -8,22 +8,22 @@ namespace DevelopmentChallenge.Data.Classes
     {
         private readonly decimal _lado;
 
-        public TrianguloEquilatero(decimal lado) : base(FormaGeometricaTipo.TrianguloEquilatero, lado)
+        public TrianguloEquilatero(decimal lado) : base(FormaGeometricaTipo.TrianguloEquilatero)
         {
             _lado = lado;
         }
 
-        public decimal CalcularArea() => ((decimal)Math.Sqrt(3) / 4) * _lado * _lado;
+        public decimal CalcularArea() => ((_lado*_lado) * (decimal)Math.Sqrt(3)) / 4;
 
         public decimal CalcularPerimetro() => _lado * 3;
 
-        public string TraducirForma(int cantidad, int idioma)
+        public string TraducirForma(int cantidad, Idioma idioma)
         {
             switch (idioma)
             {
-                case FormaGeometrica.Castellano: return cantidad == 1 ? "Triángulo" : "Triángulos";
-                case FormaGeometrica.Ingles: return cantidad == 1 ? "Triangle" : "Triangles";
-                case FormaGeometrica.Italiano: return cantidad == 1 ? "Triangolo" : "Triangoli";
+                case Idioma.Castellano: return cantidad == 1 ? "Triángulo" : "Triángulos";
+                case Idioma.Ingles: return cantidad == 1 ? "Triangle" : "Triangles";
+                case Idioma.Italiano: return cantidad == 1 ? "Triangolo" : "Triangoli";
                 default: return string.Empty;
             }
         }

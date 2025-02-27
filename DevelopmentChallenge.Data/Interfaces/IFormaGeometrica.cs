@@ -7,6 +7,5 @@ namespace DevelopmentChallenge.Data.Interfaces
         FormaGeometricaTipo Tipo { get; set; }
         decimal CalcularArea();
         decimal CalcularPerimetro();
-        //string Imprimir(int idioma);
     }
 }
