@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataTestRectangulo.cs" />
+    <Compile Include="DataTestReportesOptimizado.cs" />
     <Compile Include="DataTestReportes.cs" />
     <Compile Include="DataTests.cs" />
     <Compile Include="DataTestTrapecio.cs" />

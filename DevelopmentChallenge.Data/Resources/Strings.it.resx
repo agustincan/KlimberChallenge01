@@ -117,16 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Area" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Formas" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListaVacia" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Perimetro" xml:space="preserve">
+    <value />
+  </data>
   <data name="Rectangulo" xml:space="preserve">
     <value>Rettangolo</value>
   </data>
   <data name="Rectangulos" xml:space="preserve">
     <value>Rettangoli</value>
   </data>
+  <data name="ReporteDeFormas" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value />
+  </data>
   <data name="Trapecio" xml:space="preserve">
     <value>Trapecio</value>
   </data>
+  <data name="TrapecioSingular" xml:space="preserve">
+    <value>Trapecio</value>
+  </data>
   <data name="Trapecios" xml:space="preserve">
+    <value>Trapecios</value>
+  </data>
+  <data name="TrapecioPlural" xml:space="preserve">
     <value>Trapecios</value>
   </data>
   <data name="Triangulo" xml:space="preserve">
@@ -134,5 +158,11 @@
   </data>
   <data name="Triangulos" xml:space="preserve">
     <value>Triangles</value>
+  </data>
+  <data name="CuadradoSingular" xml:space="preserve">
+    <value>Cuadrados</value>
+  </data>
+  <data name="CuadradoPlural" xml:space="preserve">
+    <value>Cuadrado</value>
   </data>
 </root>

@@ -46,6 +46,7 @@
     <Compile Include="Abstraction\FormaGeometrica.cs" />
     <Compile Include="Classes\Rectangulo.cs" />
     <Compile Include="Classes\Reportes.cs" />
+    <Compile Include="Classes\ReportesOptimizado.cs" />
     <Compile Include="Classes\Trapecio.cs" />
     <Compile Include="Classes\TrianguloEquilatero.cs" />
     <Compile Include="Common\FormaGeometricaTipo.cs" />
