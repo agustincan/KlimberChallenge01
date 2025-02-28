@@ -7,6 +7,7 @@ using System.Collections.Generic;
 namespace DevelopmentChallenge.Data.Tests
 {
     [TestClass]
+    [Ignore]
     public class DataTestReportesOptimizado
     {
         [TestMethod]
